@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<style>
+		.form-container {
+			max-width: 400px;
+			margin: 50px auto;
+			padding: 20px;
+			background: #fff;
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+		
+		form h2{
+			text-align: center;
+			margin-bottom: 20px;
+			color: #444;
+		}
+		.form-group{
+			margin-bottom: 10px;
+		}
+
+		label{
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+			color: #555;
+		}
+
+		input, textarea{
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			font-size: 15px;
+			background: #f9f9f9;
+		}
+		input:focus, textarea:focus{
+			border-color: #1637c7;
+			outline: none;
+			background: #fff;
+		}
+		.btn-submit {
+			width: 100%;
+			padding: 10px;
+			background-color: #1637c7;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.btn-submit:hover{
+			background-color: #0056b3;
+		}
+
+		@media (max-width:600px) {
+			.form-container{
+				padding: 15px;
+			}
+
+			input, textarea {
+				font-size: 16px;
+			}
+
+			.btn-submit {
+				font-size: 18px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Contact</h1>
+			<nav>
+				<ul>
+					<li><a href="/templates/Index.html">Home</a></li>
+                    <li><a href="/templates/product.html">Products</a></li>
+                    <li><a href="/templates/product.html#cart">Cart</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="form-container ">
+			<form action="/submit-contact" method="POST">
+				<h2>Contact Us</h2>
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required placeholder="Enter your name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required placeholder="123@example.mail">
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10" required placeholder="Your message"></textarea>
+				</div>
+				<button type="submit" class="btn-submit">Submit</button>
+				</form>
+			</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>product</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Our Available Delicacy</h1>
+			<nav>
+				<ul>
+					<li><a href="/templates/Index.html">Home</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="/templates/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+        <section id="products">
+            <h2>Food Wey Dey </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 
+                        md:grid-cols-1 lg:grid-cols-4 gap-6">
+                <div class="product">
+                    <img 
+                    src="/images/Abacha-and-Ugba-768x432.jpg" alt="Salt">
+                    <h3>Abacha-and-Ugba</h3>
+                    <p>#100.00</p>
+                    <button onclick="addToCart('Abacha-and-Ugba', 100.00)"> Add to Cart </button>
+				</div>
+                <div class="product">
+                    <img src="/images/ofada-768x432.jpg" alt="Ofada"> 
+					<h3>Ofada</h3>
+                    <p>#150.00</p>
+                    <button onclick="addToCart('Ofada', 150.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Adalu2-768x546.jpg" alt="Adalu">
+                    <h3>Adalu</h3>
+                    <p>#200.00</p>
+                    <button onclick="addToCart('Adalu', 200.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Afang-Soup-768x512.jpg" alt="Adalu">
+                    <h3>Afang-Soup</h3>
+                    <p>#200.00</p>
+                    <button onclick="addToCart('Afang-Soup', 200.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Amala-and-Ewedu-768x510.jpeg" alt="Adalu">
+                    <h3>Amala-and-Ewedu</h3>
+                    <p>#500.00</p>
+                    <button onclick="addToCart('Amala-and-Ewedu', 500.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Boli-and-Groundnut-768x512.jpg" alt="Adalu">
+                    <h3>Boli-&-Groundnut</h3>
+                    <p>#100.00</p>
+                    <button onclick="addToCart('Boli-and-Groundnut', 100.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Chichinga-–-Ghana-768x433.jpg" alt="Adalu">
+                    <h3>Chichinga</h3>
+                    <p>#600.00</p>
+                    <button onclick="addToCart('Chichinga', 600.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Efo-Riro-768x379.jpg" alt="Adalu">
+                    <h3>Efo-Riro</h3>
+                    <p>#300.00</p>
+                    <button onclick="addToCart('Efo-Riro', 300.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/EgusiSoup-e1533238405501.jpg" alt="Adalu">
+                    <h3>EgusiSoup</h3>
+                    <p>#200.00</p>
+                    <button onclick="addToCart('EgusiSoup', 200.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Ewa-Aganyin-768x432.jpg" alt="Adalu">
+                    <h3>Ewa-Aganyin</h3>
+                    <p>#250.00</p>
+                    <button onclick="addToCart('Ewa-Aganyin', 250.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Ijebu-Garri-and-Groundnut-768x432.jpg" alt="Adalu">
+                    <h3>Ijebu-Garri-and-Groundnut</h3>
+                    <p>#200.00</p>
+                    <button onclick="addToCart('Ijebu-Garri-and-Groundnut', 200.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Moi-Moi-768x512.jpg" alt="Adalu">
+                    <h3>Moi-Moi</h3>
+                    <p>#200.00</p>
+                    <button onclick="addToCart('Moi-Moi', 200.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Nkwobi-768x432.jpg" alt="Adalu">
+                    <h3>Nkwobi</h3>
+                    <p>#700.00</p>
+                    <button onclick="addToCart('Nkwobi', 700.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/ogbono-1-1-768x512.jpg" alt="Adalu">
+                    <h3>ogbono</h3>
+                    <p>#200.00</p>
+                    <button onclick="addToCart('ogbono', 200.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/ofada-768x432.jpg" alt="Adalu">
+                    <h3>ofada</h3>
+                    <p>#300.00</p>
+                    <button onclick="addToCart('ofada', 300.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Pounded-Yam.jpg" alt="Adalu">
+                    <h3>Pounded-Yam</h3>
+                    <p>#500.00</p>
+                    <button onclick="addToCart('Pounded-Yam', 500.00)"> Add to Cart </button>
+                </div>
+                <div class="product">
+                    <img src="/images/Tuwo-Shinkafa-768x576.jpg" alt="Adalu">
+                    <h3>Tuwo-Shinkafa</h3>
+                    <p>#400.00</p>
+                    <button onclick="addToCart('Tuwo-Shinkafa', 400.00)"> Add to Cart </button>
+                </div>
+            </div>
+        </section>
+        <aside id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="buy-button" onclick="checkout()">order</button><hr>
+			<h3>Total: #<span id="total-price">0</span></h3>
+        </aside>
+    </div>
+
+	<script src="/static/js/app.js"></script>
+
+</body>
+</html>
